@@ -47,6 +47,13 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     background: var(--bg-light);
+    zoom: 0.8;
+    -moz-transform: scale(0.8);
+    -moz-transform-origin: 0 0;
+    transform: scale(0.8);
+    transform-origin: 0 0;
+    width: 125%;
+    min-height: 125vh;
 }
 
 /* Preloader */
@@ -1737,6 +1744,154 @@ section {
     
     .commitment-pillars {
         flex-direction: column;
+    }
+}
+
+/* Mobile-specific zoom adjustments */
+@media (max-width: 992px) {
+    body {
+        zoom: 1;
+        -moz-transform: scale(1);
+        transform: scale(1);
+        width: 100%;
+        min-height: 100vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-badge {
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+    }
+    
+    .hero-badge span {
+        font-size: 0.75rem;
+    }
+    
+    .title-line {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-tag {
+        font-size: 0.75rem;
+        padding: 0.4rem 1rem;
+    }
+    
+    .nav-container {
+        padding: 0 1rem;
+    }
+    
+    .logo-text {
+        font-size: 1.4rem;
+    }
+    
+    .logo-sub {
+        font-size: 0.7rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .stat-label {
+        font-size: 0.75rem;
+    }
+    
+    .vm-card {
+        padding: 1.5rem;
+    }
+    
+    .service-card {
+        padding: 1.5rem;
+    }
+    
+    .highlight-item {
+        padding: 1rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .highlight-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .project-image img {
+        height: 250px;
+    }
+    
+    .leader-card {
+        padding: 1.5rem;
+    }
+    
+    .leader-info h3 {
+        font-size: 1.5rem;
+    }
+    
+    .leader-image-container {
+        max-width: 250px;
+    }
+    
+    .count-box {
+        padding: 1.5rem 2rem;
+    }
+    
+    .count-number {
+        font-size: 2rem;
+    }
+    
+    .pillar {
+        width: 100%;
+    }
+    
+    .pillar i {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .pillar span {
+        font-size: 0.85rem;
+    }
+    
+    .contact-card,
+    .contact-form {
+        padding: 1.5rem;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .footer-brand p {
+        font-size: 0.9rem;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .newsletter-form button {
+        width: 100%;
+    }
+    
+    .scroll-indicator {
+        display: none;
     }
 }
 
